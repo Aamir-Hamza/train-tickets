@@ -51,7 +51,7 @@ const SeatBooking = () => {
     try {
       setLoading(true);
       setError('');
-      const { data } = await axios.get('https://train-reservation-7aft.onrender.com/api/seats');
+      const { data } = await axios.get('https://train-tickets-ih96.onrender.com/api/seats');
       setSeats(data);
     } catch (err) {
       console.error("Error fetching seats:", err);
@@ -65,7 +65,7 @@ const SeatBooking = () => {
     try {
       setInitializingSeats(true);
       setError('');
-      await axios.post('https://train-reservation-7aft.onrender.com/api/seats/init');
+      await axios.post('https://train-tickets-ih96.onrender.com/api/seats/init');
       setSnackbarMessage('Seats initialized successfully!');
       setSnackbarOpen(true);
       await fetchSeats();
@@ -108,7 +108,7 @@ const SeatBooking = () => {
 
       // Book multiple seats
       const bookingPromises = selectedSeats.map(seat => 
-        axios.post('https://train-reservation-7aft.onrender.com/api/bookings', {
+        axios.post('https://train-tickets-ih96.onrender.com/api/bookings', {
           seatNumber: seat.seatNumber,
         })
       );
