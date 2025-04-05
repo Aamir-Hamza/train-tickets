@@ -6,8 +6,8 @@ The platform provides real-time seat availability updates, secure user authentic
 
 ## Deployment Links
 
-- **Live Frontend**: [https://train-reservation-nine.vercel.app/](https://train-reservation-nine.vercel.app/)
-- **Backend API**: [https://train-reservation-7aft.onrender.com](https://train-reservation-7aft.onrender.com)
+- **Live Frontend**: [https://train-tickets-bay.vercel.app/](https://train-tickets-ih96.onrender.com)
+- **Backend API**: [https://train-tickets-ih96.onrender.com](https://train-tickets-ih96.onrender.com)
 
 ## Project Structure
 
